@@ -1,0 +1,178 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #c8c8c8;
+  font-family: system-ui;
+  line-height: 1.3;
+  overflow-y: auto;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+a {
+  color: #539bf5;
+}
+
+article {
+  max-width: 520px;
+  width: 100%;
+  padding: 16px 36px 36px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article > .ssiNotice {
+  height: 40px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  background-color: rgba(83, 155, 245, 0.2);
+  color: #539bf5;
+  display: inline-flex;
+  align-items: center;
+}
+article > .ssiNotice > svg {
+  width: 24px;
+  height: auto;
+  margin-right: 8px;
+}
+article > .ssiNotice.none {
+  display: none;
+}
+article > .card {
+  width: 100%;
+  padding: 16px 18px 17px;
+}
+article > .card.none {
+  display: none;
+}
+article > .card.notice {
+  border-color: #539bf5;
+}
+article > .card.notice > h2 {
+  color: #539bf5;
+}
+article > .card.inactive1 {
+  border-color: #cc6b2c;
+}
+article > .card.inactive1 > h2 {
+  color: #cc6b2c;
+}
+article > .card.inactive2 {
+  border-color: #e5534b;
+}
+article > .card.inactive2 > h2 {
+  color: #e5534b;
+}
+article > .card h2 {
+  margin: 0;
+  font-size: 20px;
+}
+article > .card .row {
+  display: flex;
+}
+article > .card .row > svg {
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
+}
+article > .card > p, article > .card ul {
+  margin: 0;
+  margin-top: 8px;
+}
+article > .card > p.small, article > .card ul.small {
+  font-size: 12px;
+  font-style: italic;
+  color: #646464;
+}
+article > .card > ul {
+  padding-left: 1em;
+}
+article > .card.tags > div {
+  line-height: 2.2;
+  margin-top: 8px;
+}
+article > .card.tags > div > span {
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  border: solid 1px #333333;
+  background-color: #111111;
+  white-space: nowrap;
+}
+
+.card {
+  position: relative;
+  background-color: #000000;
+  border: solid 1px #333333;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+body > .card {
+  position: sticky;
+  top: -250px;
+  margin-bottom: 0;
+  z-index: 15;
+  border: none;
+  border-bottom: solid 1px transparent;
+  border-radius: 0px;
+  background-color: transparent;
+  transition: 135ms ease-out;
+  transition-property: background-color, border-color;
+}
+body > .card.scrolled {
+  background-color: #000000;
+  border-color: #333333;
+}
+body > .card.scrolled h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+body > .card.scrolled .avatarIcon {
+  display: block;
+}
+body > .card > img:not(.avatar) {
+  width: 100%;
+  max-height: 164px;
+  object-fit: cover;
+  border-bottom: solid 1px #333333;
+}
+body > .card > img.avatar {
+  position: absolute;
+  left: 50%;
+  top: calc(164px - 148px / 2);
+  height: 148px;
+  transform: translate(-50%);
+  border-radius: 100px;
+  border: solid 1px #333333;
+}
+body > .card > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 92px;
+}
+body > .card > span > .avatarIcon {
+  height: 36px;
+  border: solid 1px #333333;
+  border-radius: 99px;
+  display: none;
+  margin-right: 8px;
+}
+
+.credit {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
