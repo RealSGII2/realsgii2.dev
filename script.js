@@ -54,6 +54,9 @@ const ssi = {
 	},
 	'mee6': {
 		inactive: 2
+	},
+	'mh100': {
+		inactive: 1
 	}
 }
 
